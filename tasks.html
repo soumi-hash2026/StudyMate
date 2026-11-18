@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Tasks - StudyMate</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<nav class="navbar">
+    <h2 class="logo">StudyMate</h2>
+
+    <ul class="nav-links">
+        <li><a href="index.html">Dashboard</a></li>
+        <li><a href="tasks.html" class="active">My Tasks</a></li>
+        <li><a href="timetable.html">My Timetable</a></li>
+        <li><a href="performance.html">Performance</a></li>
+        <li><a href="planner.html">Smart Planner</a></li>
+    </ul>
+</nav>
+
+<section id="tasks">
+    <h2>My Tasks</h2>
+    <p>Manage your assignments, revision and deadlines.</p>
+
+    <div class="task-form">
+        <input type="text" id="task-input" placeholder="Enter a new task">
+
+        <select id="priority-input">
+            <option value="low">Low Priority</option>
+            <option value="medium" selected>Medium Priority</option>
+            <option value="high">High Priority</option>
+        </select>
+
+        <button id="add-task-button">Add Task</button>
+    </div>
+
+    <ul id="task-list"></ul>
+</section>
+
+<script src="js/script.js"></script>
+<footer class="footer">
+    <p>&copy; 2026 StudyMate. All rights reserved.</p>
+    <p>Made for students, with students in mind.</p>
+</footer>
+</body>
+</html>

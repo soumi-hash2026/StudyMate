@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Performance - StudyMate</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<nav class="navbar">
+    <h2 class="logo">StudyMate</h2>
+
+    <ul class="nav-links">
+        <li><a href="index.html">Dashboard</a></li>
+        <li><a href="tasks.html">My Tasks</a></li>
+        <li><a href="timetable.html">My Timetable</a></li>
+        <li><a href="performance.html" class="active">Performance</a></li>
+        <li><a href="planner.html">Smart Planner</a></li>
+    </ul>
+</nav>
+
+<section id="performance">
+    <h2>My Academic Performance</h2>
+    <p>Track your grades and identify subjects that need more attention.</p>
+
+    <div class="grade-form">
+        <input type="text" id="subject-input" placeholder="Subject name">
+
+        <input type="number" id="grade-input" placeholder="Grade (%)" min="0" max="100">
+
+        <input type="number" id="threshold-input" placeholder="Target (%)" min="0" max="100" value="74">
+
+        <button id="add-grade-button">Add Grade</button>
+    </div>
+
+    <ul id="grade-list"></ul>
+</section>
+
+<script src="js/script.js"></script>
+<footer class="footer">
+    <p>&copy; 2026 StudyMate. All rights reserved.</p>
+    <p>Made for students, with students in mind.</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Timetable - StudyMate</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<nav class="navbar">
+    <h2 class="logo">StudyMate</h2>
+
+    <ul class="nav-links">
+        <li><a href="index.html">Dashboard</a></li>
+        <li><a href="tasks.html">My Tasks</a></li>
+        <li><a href="timetable.html" class="active">My Timetable</a></li>
+        <li><a href="performance.html">Performance</a></li>
+        <li><a href="planner.html">Smart Planner</a></li>
+    </ul>
+
+</nav>
+
+<section id="timetable">
+    <h2>My Weekly Timetable</h2>
+    <p>Organize your classes and personal activities.</p>
+
+    <div class="schedule-form">
+        <input type="text" id="activity-input" placeholder="Activity name">
+
+        <select id="day-input">
+            <option value="">Choose a day</option>
+            <option>Monday</option>
+            <option>Tuesday</option>
+            <option>Wednesday</option>
+            <option>Thursday</option>
+            <option>Friday</option>
+            <option>Saturday</option>
+            <option>Sunday</option>
+        </select>
+
+        <input type="time" id="time-input">
+
+        <button id="add-activity-button">Add Activity</button>
+    </div>
+
+    <ul id="schedule-list"></ul>
+
+<button id="clear-schedule-button">Clear All</button>
+</section>
+
+<section id="rescheduling">
+    <h2>Reschedule a Missed Session</h2>
+    <p>Missed a study session? Find another time for it.</p>
+
+    <input type="text" id="missed-activity-input"
+           placeholder="Enter the missed activity">
+
+    <select id="new-day-input">
+        <option value="">Choose a new day</option>
+        <option>Monday</option>
+        <option>Tuesday</option>
+        <option>Wednesday</option>
+        <option>Thursday</option>
+        <option>Friday</option>
+        <option>Saturday</option>
+        <option>Sunday</option>
+    </select>
+
+    <input type="time" id="new-time-input">
+
+    <button id="reschedule-button">Reschedule Session</button>
+</section>
+
+<script src="js/script.js"></script>
+<footer class="footer">
+    <p>&copy; 2026 StudyMate. All rights reserved.</p>
+    <p>Made for students, with students in mind.</p>
+</footer>
+</body>
+</html>

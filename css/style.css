@@ -1,0 +1,456 @@
+
+/* GENERAL SETTINGS */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #A9BFAE;
+    font-family: Arial, sans-serif;
+    color: #303D34;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+a {
+    color: #294D35;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+/* NAVIGATION BAR */
+
+.navbar {
+    max-width: 1100px;
+    margin: 0 auto 30px;
+    padding: 18px 25px;
+    background-color: #F8F8F3;
+    border-radius: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo {
+    color: #244B35;
+    font-size: 24px;
+    margin: 0;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links a {
+    color: #405A49;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    color: #416B4C;
+}
+
+.nav-links a.active {
+    color: #244B35;
+    border-bottom: 2px solid #416B4C;
+    padding-bottom: 5px;
+}
+
+.tagline {
+    color: #405A49;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+
+/* WELCOME SECTION */
+
+#main-title {
+    color: #203F30;
+    text-align: center;
+    font-size: 36px;
+    margin-top: 25px;
+}
+
+.description {
+    font-size: 18px;
+    color: #405A49;
+    text-align: center;
+}
+
+
+/* GENERAL SECTIONS */
+
+#dashboard,
+#tasks,
+#timetable,
+#performance,
+#smart-planner,
+#rescheduling {
+    background-color: #F8F8F3;
+    padding: 25px;
+    margin: 25px auto;
+    max-width: 900px;
+    border-radius: 14px;
+    border: 1px solid #C5D3C5;
+    box-shadow: 0 4px 15px rgba(36, 75, 64, 0.12);
+}
+
+section h2 {
+    color: #244B35;
+    margin-bottom: 15px;
+}
+
+
+/* DASHBOARD */
+
+#dashboard h2 {
+    color: #244B35;
+}
+
+.overview {
+    margin-top: 25px;
+    padding: 20px;
+    background-color: #E1EBDD;
+    border-radius: 12px;
+}
+
+.overview h3 {
+    color: #385F43;
+}
+
+
+/* INPUTS AND SELECTS */
+
+input,
+select {
+    padding: 11px;
+    border: 1px solid #A5B8A5;
+    border-radius: 8px;
+    font-size: 15px;
+    background-color: #FFFFFF;
+    color: #303D34;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #52765B;
+    box-shadow: 0 0 0 3px rgba(82, 118, 91, 0.18);
+}
+
+
+/* FORMS */
+
+.schedule-form,
+.grade-form,
+.task-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.schedule-form input,
+.schedule-form select,
+.grade-form input,
+.task-form input,
+.task-form select {
+    flex: 1;
+    min-width: 150px;
+}
+
+
+/* BUTTONS */
+
+button,
+.primary-button {
+    background-color: #416B4C;
+    color: #FFFFFF;
+    border: none;
+    padding: 11px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover,
+.primary-button:hover {
+    background-color: #294D35;
+    transform: translateY(-2px);
+}
+
+
+/* TASKS, TIMETABLE, GRADES AND PLANNER LISTS */
+
+#task-list,
+#schedule-list,
+#grade-list,
+#plan-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0;
+    text-align: left;
+}
+
+#task-list li,
+#schedule-list li,
+#grade-list li,
+#plan-list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 15px 18px;
+    margin-bottom: 12px;
+    background-color: #EAF0E7;
+    border: 1px solid #D5E1D2;
+    border-radius: 10px;
+    color: #303D34;
+}
+
+
+/* TASK AND PLANNER TEXT */
+
+#task-list li span,
+#plan-list li span,
+#schedule-list li span,
+#grade-list li span {
+    flex: 1;
+    min-width: 120px;
+    overflow-wrap: anywhere;
+}
+
+#task-list li small,
+#plan-list li small {
+    color: #416B4C;
+    font-size: 13px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+
+/* COMPLETED TASKS */
+
+.completed .task-text {
+    text-decoration: line-through;
+    color: #718075;
+}
+
+
+/* DELETE BUTTONS */
+
+.delete-task-button,
+.delete-activity-button,
+.delete-grade-button {
+    background-color: #416B4C;
+    color: #FFFFFF;
+    padding: 7px 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.delete-task-button:hover,
+.delete-activity-button:hover,
+.delete-grade-button:hover {
+    background-color: #294D35;
+}
+
+
+/* CLEAR TIMETABLE BUTTON */
+
+#clear-schedule-button {
+    background-color: #416B4C;
+    color: #FFFFFF;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#clear-schedule-button:hover {
+    background-color: #294D35;
+}
+
+
+/* ACADEMIC PERFORMANCE */
+
+#performance h2 {
+    color: #244B35;
+}
+
+
+/* SMART PLANNER */
+
+#study-plan {
+    margin-top: 20px;
+    padding: 18px;
+    background-color: #E1EBDD;
+    border-radius: 12px;
+}
+
+#generate-plan-button {
+    margin-top: 15px;
+}
+
+
+/* MOTIVATION SECTION */
+
+.motivation-section {
+    margin: 40px auto;
+    max-width: 900px;
+}
+
+.motivation-card {
+    background: linear-gradient(135deg, #DCE9D9, #F8F8F3);
+    padding: 35px;
+    border-radius: 18px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(36, 75, 64, 0.12);
+    max-width: 700px;
+    margin: auto;
+}
+
+.motivation-card h2 {
+    color: #385F43;
+    margin-bottom: 20px;
+}
+
+.motivation-card #motivation-message {
+    color: #244B35;
+    font-size: 25px;
+    margin-bottom: 12px;
+}
+
+.motivation-card #progress-message {
+    color: #405A49;
+    line-height: 1.7;
+}
+
+.daily-challenge {
+    background-color: #F8F8F3;
+    padding: 18px;
+    border-radius: 12px;
+    margin: 25px 0;
+}
+
+.daily-challenge h3 {
+    color: #385F43;
+}
+
+#completed-count {
+    font-weight: bold;
+    color: #385F43;
+}
+
+#inspire-button {
+    background-color: #416B4C;
+    color: #FFFFFF;
+    padding: 13px 25px;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+#inspire-button:hover {
+    background-color: #294D35;
+}
+
+
+/* FOOTER */
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    color: #405A49;
+    font-size: 14px;
+}
+
+.footer p {
+    margin: 5px 0;
+}
+
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 12px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        padding: 18px;
+    }
+
+    .nav-links {
+        gap: 12px;
+    }
+
+    #main-title {
+        font-size: 28px;
+    }
+
+    #dashboard,
+    #tasks,
+    #timetable,
+    #performance,
+    #smart-planner,
+    #rescheduling {
+        padding: 18px;
+    }
+
+    .schedule-form,
+    .grade-form,
+    .task-form {
+        flex-direction: column;
+    }
+
+    .schedule-form input,
+    .schedule-form select,
+    .grade-form input,
+    .task-form input,
+    .task-form select {
+        width: 100%;
+    }
+
+    #task-list li,
+    #schedule-list li,
+    #grade-list li,
+    #plan-list li {
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .motivation-card {
+        padding: 22px;
+    }
+
+    .motivation-card #motivation-message {
+        font-size: 21px;
+    }
+}
